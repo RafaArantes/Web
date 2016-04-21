@@ -1,6 +1,6 @@
 <h1>![](http://i.imgur.com/lNdjvMq.png) UIoT <sup><sup>&nbsp;website</sup></sup><sub><sub><sup></h1></sup></sub></sub>
 <br>
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/UIoT/public-room) [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+[![ZenHub](https://img.shields.io/badge/supercharged-zenhub.io-orange.svg)](https://zenhub.io)
 
 <b>What this repository should be?</b><br>
 This repository contains our website content (assets and pages). Here all content about web site will be published.
