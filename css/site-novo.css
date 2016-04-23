@@ -30,30 +30,30 @@
     margin-top: 0
 }
 
-.light {
-    font-weight: 100 !important;
-}
-
 .main-header.uiot h1 {
     font-size: 3em;
     padding-top: 0 !important;
     margin-bottom: 30px;
     line-height: 1.1;
-    font-family: 'Roboto', sans-serif;
+    font-weight: lighter
 }
 
 .main-header.uiot p.highest {
     font-size: 1.4em;
     line-height: 1.6;
     margin-bottom: 120px;
-    font-weight: 100;
-    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+blockquote, body, .tags, ul.right, ul.right li a, p.highest, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Proxima Nova', 'proxima-nova', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
     color: #333;
-    line-height: 1
+    line-height: 1;
+    font-weight: 100
 }
 
 .white-text {
@@ -61,19 +61,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .highest {
-    color: #777;
     line-height: 24px;
-    font-weight: 400
+    font-weight: 200
 }
 
 .header-text p {
     margin-bottom: 0 !important
-}
-
-p.highest {
-    color: #777;
-    font-weight: 200;
-    font-family: 'Roboto', sans-serif;
 }
 
 p.highest.white-text, p.highest.white {
@@ -82,7 +75,7 @@ p.highest.white-text, p.highest.white {
 
 .main-header.uiot .button {
     margin-top: 30px;
-    padding: 1em 1.5em
+    padding: 1em 1.5em;
 }
 
 .text-center {
@@ -157,7 +150,8 @@ p.highest.white-text, p.highest.white {
     margin-bottom: 0;
     position: relative;
     float: left;
-    width: auto
+    width: auto;
+    display: none
 }
 
 .uiot-bar ul.title-area li.name h1 {
@@ -188,10 +182,6 @@ p.highest.white-text, p.highest.white {
     background: none
 }
 
-.top-bar .top-bar-section ul.right {
-    font-family: 'Roboto', sans-serif;
-}
-
 .uiot-bar ul.right li {
     display: block;
     float: left
@@ -201,8 +191,7 @@ p.highest.white-text, p.highest.white {
     padding: 0 16px;
     border-left: 1px solid rgba(0, 0, 0, 0);
     background: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300
+    font-weight: bold
 }
 
 .uiot-bar ul.right li a {
@@ -216,6 +205,12 @@ p.highest.white-text, p.highest.white {
 
 .top-bar .top-bar-section ul.right li a:hover {
     color: #FFF
+}
+
+@media only screen and (min-width: 768px) {
+    .uiot-bar ul.title-area {
+        display: block !important;
+    }
 }
 
 .uiot-bar ul.title-area li.name h1 a {
@@ -270,6 +265,13 @@ hr.dotted {
     font-weight: 200
 }
 
+#blog .centered-text {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 14px
+}
+
 .blog-feature span.title {
     display: block;
     margin-bottom: 5px;
@@ -277,7 +279,7 @@ hr.dotted {
     font-weight: 300
 }
 
-.blog-feature span.blockq {
+.blog-feature span.block-quote {
     display: block;
     line-height: 21px;
     font-size: 0.875em;
@@ -288,10 +290,6 @@ hr.dotted {
 
 .highest.large {
     font-size: 1.35rem
-}
-
-.callout.gray {
-    background: #f6f6f6
 }
 
 .callout.uiot-logos {
@@ -364,17 +362,6 @@ h3.light {
     background: url(../img/u-for-uiot.png)
 }
 
-.tags {
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: #777
-}
-
-.benefits h1 {
-    font-family: 'Roboto', sans-serif;
-}
-
 .talent .benefits {
     margin-bottom: 30px
 }
@@ -401,10 +388,10 @@ h3.light {
     position: absolute;
     top: .625rem;
     right: 1.375rem;
-    font: lighter 2rem/1 'Roboto', sans-serif
+    font: lighter 2rem/1 'Proxima Nova', 'proxima-nova', 'Helvetica Neue', 'Roboto', sans-serif
 }
 
-.lot {
+p {
     color: #777
 }
 
@@ -416,30 +403,20 @@ h3.light {
 .uiot-footer li {
     display: block;
     float: left;
-    margin-left: 6px;
+    margin-left: 0;
     text-transform: uppercase;
-    font: 400 .875em 'Roboto'
+    font: 400 .875em 'proxima-nova', sans-serif
 }
 
 .uiot-footer li a {
     color: #666;
-    padding: 3px 6px
+    padding: 3px 3px
 }
 
 .copyright {
-    margin: 6px 0px 0px 6px;
+    margin: 6px 0 0 6px;
     font-size: 0.75em;
     color: #666
-}
-
-#footer .gray {
-    border-bottom: #333 10px solid
-}
-
-.footer-logo {
-    display: inline-block;
-    height: 70px;
-    width: 45px
 }
 
 .user-modal {
@@ -447,8 +424,26 @@ h3.light {
 }
 
 .u-button {
-    background: #33a9ff !important;
-    color: #fff !important
+    background: #33a9ff;
+    color: #fff
+}
+
+.a-button {
+    background: #2976bb;
+    color: #fff
+}
+
+.a-button:hover {
+    background: #1E5688;
+    color: #fff
+}
+
+.button {
+    opacity: 0.95
+}
+
+.button:hover {
+    opacity: 1
 }
 
 .y-button {
@@ -469,14 +464,6 @@ h3.light {
     display: inline-block
 }
 
-.top-bar-section li.active:not(.has-form) a:not(.button) {
-    background: #3277a7
-}
-
-.top-bar-section li.active:not(.has-form) a:not(.button):hover {
-    background: #31678d !important
-}
-
 .label.secondary {
     color: #fff;
     background: #db5453
@@ -495,9 +482,6 @@ h3.light {
     height: auto
 }
 
-.uiot-logos ul.home-social li:first-child img {
-}
-
 .uiot-logos ul.home-social li {
     list-style: none;
     display: table;
@@ -509,7 +493,6 @@ h3.light {
 
 blockquote {
     text-align: justify !important;
-    font-family: 'Roboto', sans-serif;
     font-weight: 200;
 }
 
@@ -518,7 +501,7 @@ blockquote {
 }
 
 strongs {
-    font-weight: 200 !important;
+    font-weight: bold !important;
     line-height: inherit
 }
 
@@ -530,8 +513,17 @@ strongs {
     max-width: 90%
 }
 
-#background-blue {
-    background: #d7eaf8
+.background-blue {
+    background: #6799C6
+}
+
+.network-blue {
+    background: #6799C6 url(/img/network.png) no-repeat;
+    background-size: cover
+}
+
+.background-gray {
+    background: #F0F0E8
 }
 
 #testimonials {
@@ -547,6 +539,59 @@ strongs {
     margin: auto
 }
 
-body {
-    font-family: 'Roboto', sans-serif
+p.scroll-message {
+    font-size: 1.25em;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-weight: normal;
+    margin-top: -50px;
+    line-height: 1.6;
+    margin-bottom: 120px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'proxima-nova';
+    src: url(/fonts/ProximaNova-Reg-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'proxima-nova';
+    src: url(/fonts/ProximaNova-Light-webfont.woff) format("woff");
+    font-weight: 200;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'proxima-nova';
+    src: url(/fonts/ProximaNova-Bold-webfont.woff) format("woff");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'proxima-nova-condensed';
+    src: url(/fonts/proximanovacond-light-webfont.woff) format("woff");
+    font-weight: 200;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'proxima-nova-condensed';
+    src: url(/fonts/proximanovacond-regular-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'proxima-nova-condensed';
+    src: url(/fonts/proximanovacond-bold-webfont.woff) format("woff");
+    font-weight: bold;
+    font-style: normal
 }

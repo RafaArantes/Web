@@ -1,0 +1,105 @@
+var UIoT = function () {
+
+    var Settings = {
+        header_height: jQuery('.header-text').height(),
+        pause_button_height: jQuery('.pause-play-button').height(),
+        top_bar_height: jQuery('.top-bar').height(),
+
+        window_height: jQuery(window).height(),
+        window_width: jQuery(window).width()
+    };
+
+    var BackgroundSettings = {
+        background_div: jQuery('.video-area'),
+        background_images: ['1.jpg', '2.jpg', '3.jpg']
+    };
+
+    var Definitions = {
+        window_correct_height: Settings.window_height * 0.958,
+        window_top_correct_height: (Settings.window_correct_height * 0.25),
+
+        video_height: (Settings.window_height - Settings.top_bar_height),
+        video_text_margin: (Settings.window_height / 2) - (Settings.header_height / 2)
+    };
+
+    var ResizeAdjustment = function () {
+
+        // Set Video Wrapper Size
+        jQuery('#videoBackground, #videoBackgroundLoop').css({
+            height: 'auto',
+            width: '100%'
+        });
+    };
+
+    var SizeAdjustment = function () {
+
+        // Set Main Wrapper Height and Margin Top
+        jQuery('#main-role').css('height', Definitions.window_correct_height + 'px');
+        jQuery('#yeah').css('margin-top', Definitions.window_top_correct_height + 'px');
+
+        // Set Header Wrapper Size
+        jQuery('.main-header .services').height(Definitions.video_height);
+        jQuery('.header-text').css('margin-top', Definitions.video_text_margin).addClass('active');
+
+        // Get Blog Element
+        var blogElement = document.getElementById('blog_frame');
+
+        // If Blog Element Exists Update their Data
+        if (blogElement) {
+            blogElement.height = blogElement.contentWindow.document.body.scrollHeight + "px";
+            blogElement.width = blogElement.contentWindow.document.body.scrollWidth + "px";
+        }
+
+        // Scroll
+        jQuery(window).on("scroll", function () {
+            jQuery(".scroll-message").is(":visible") && jQuery(".scroll-message").fadeOut(300);
+        });
+    };
+
+    var Scroll = function () {
+
+        jQuery(document).ready(function ($) {
+            $('a[href^="#"]').bind('click.smoothscroll', function (e) {
+                e.preventDefault();
+                var target = this.hash,
+                    $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top - 40
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+    };
+
+    // Background Of Page
+    var Background = function () {
+
+        // If Background Element Exists. Update Image
+        if (BackgroundSettings.background_div) {
+            BackgroundSettings.background_div.css('background', '#161616 url(http://uiot_site/img/welcome/' + BackgroundSettings.background_images[Math.floor(Math.random() * BackgroundSettings.background_images.length)] + ') no-repeat fixed center top');
+        }
+    };
+
+    var Triggers = function () {
+
+        jQuery(window).on('resize', function () {
+            ResizeAdjustment();
+        }).trigger('resize');
+    };
+
+    var Initialize = function () {
+
+        SizeAdjustment();
+
+        Scroll();
+
+        Background();
+
+        Triggers();
+
+    };
+
+    Initialize();
+};
