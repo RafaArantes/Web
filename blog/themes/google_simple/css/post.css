@@ -36,6 +36,8 @@ article.post header.post h1.title {
 
 article.post header.post h1.title a {
     color: #333;
+    text-transform: uppercase;
+    font-weight: 300
 }
 
 article.post header.post h1.title a:hover {
@@ -108,6 +110,7 @@ article.post footer.post {
     padding: 5px 10px;
     font-size: 0.85em;
     clear: both;
+    width: 21%;
 }
 
 article.post footer.post span {
@@ -147,6 +150,21 @@ POST :: Comments
 
 #comment_list span.author_name {
     font-weight: bold;
+}
+
+.post .date {
+    text-transform: uppercase;
+    color: #777
+}
+
+.post-content p {
+    display: block;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 20px;
+    -webkit-font-smoothing: antialiased
 }
 
 #comment_list span.date {

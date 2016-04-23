@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<notifications><notification type="string" category="session_start" mail="" ip="P/QKx/8HNWtgM+oG37+pE6udbjzV/m0bZfrFJQBwNAE=" date="1461087327"></notification></notifications>
+<notifications><notification type="string" category="session_start" mail="" ip="P/QKx/8HNWtgM+oG37+pE6udbjzV/m0bZfrFJQBwNAE=" date="1461087327"/><notification type="string" category="session_fail" mail="" ip="C94SfEQ6/ezeVTIvGgm82iYsmqBwphkeRPCXd3xc3Kk=" date="1461419301"/><notification type="string" category="session_start" mail="" ip="C94SfEQ6/ezeVTIvGgm82iYsmqBwphkeRPCXd3xc3Kk=" date="1461419305"></notification></notifications>
