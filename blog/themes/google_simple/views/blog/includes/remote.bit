@@ -1,7 +1,7 @@
-<article class="post postrr" style="padding: 0 15% 0 15%;">
+<article class="post postrr">
 
-    <header class="post" style="text-align: center;">
-        <h1 class="title"><a style="text-transform: lowercase;font-weight: normal;" href="<?php echo Post::permalink() ?>"><?php echo Post::title() ?></a></h1>
+    <header class="post" style="text-align: center;margin-bottom:30px">
+        <h1 class="title"><a href="<?php echo Post::permalink() ?>"><?php echo Post::title() ?></a></h1>
         <div class="date"><?php echo Post::published() ?></div>
     </header>
 
