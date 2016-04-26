@@ -4,7 +4,6 @@
     <!-- meta properties -->
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
     <!-- about the website -->
     <meta name="description"
           content="UIoT - Universal Internet of Things, is an open source project for a dynamic, asbtract, universal IoT Architecture"/>
@@ -13,19 +12,14 @@
     <meta name="author" content="Universal Internet of Things">
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="7 days">
-
     <!-- website title -->
     <title>
         UIoT
     </title>
-
     <!-- style sheets -->
-    <!--<link href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,400,300,300italic,400italic,500,700,500italic'
-          rel='stylesheet' type='text/css'>-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/foundation.css"/>
-    <link rel="stylesheet" href="/css/site-novo.css"/>
-
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/foundation.min.css"/>
+    <link rel="stylesheet" href="/css/uiot.min.css"/>
     <!-- website fav-icon -->
     <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.ico'/>
 </head>
@@ -74,14 +68,14 @@
                             is an idea, a motivation, a project. To create an uniform, free, open-source and dynamic IoT
                             architecture.
                         </p>
-                        <a class="button radius y-button" href="#get">
+                        <a class="button radius y-button" href="/get.html">
                             Get UIoT
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="video-area"></div>
+        <div class="video-area background-area"></div>
         <p class="scroll-message">or go ahead!</p>
     </div>
 </section>
@@ -89,11 +83,11 @@
     <div class="row tie bump-25">
         <div class="large-4 columns">
             <h1 class="light">
-                supporting big ideas
+                Supporting big ideas
             </h1>
             <p class="highest">
                 We want help each other, including you, to discover a new <strong>IoT</strong> world.
-                For this purpose we offers a high library of frameworks.
+                For this purpose we offer an overhead set of toolkit's.
             </p>
             <a class="small button radius secondary" href="/get.html#involved">
                 Be Involved!
@@ -104,8 +98,8 @@
                 <h3>
                     UIoT devices
                 </h3>
-                UIoT offers a big compiled set of use cases for home devices, which you can involve your device quickly
-                with great tools.
+                UIoT offers a big set of pre-compiled use cases, which you can involve your device quickly with great
+                tools. The device library contains all that you need.
                 <br>
                 <a href="/get.html#devices">
                     Find Devices!
@@ -117,9 +111,8 @@
                 <h3>
                     UIoT applications
                 </h3>
-                UIoT grants a context aware eco-system where nightly applications made to improve your interactions with
-                your network
-                in a new way.
+                UIoT grants a context aware eco-system where nightly applications being made to improve your
+                interactions with the network in a new way.
                 <br>
                 <a href="/get.html#apps">
                     Discover Apps!
@@ -138,15 +131,16 @@
 <section id="think" class="network-blue">
     <div class="row benefits tie bump-25">
         <div class="small-12 medium-7 large-6 columns">
-            <h1 class="light white-text">
-                About UIoT
-            </h1>
+            <h2 class="light white-text">
+                Working for the community
+            </h2>
             <p class="highest white-text">
-                Our team talent means everything to us — it defines our culture, process and environment. We put an
-                emphasis on working with smart people who uphold our values and create new opportunities for users.
+                <strong>UIoT</strong> team works with you and for you to create a new concept of <strong>IoT</strong>.
+                Gathering help with our partners we're here to maximize your interaction and experience of a smart
+                network.
             </p>
-            <a class="small button radius a-button" href="/about.html">
-                See how UIoT works!
+            <a class="small button radius a-button" href="/about.html#manifesto">
+                See our manifesto!
             </a>
         </div>
         <div class="small-12 medium-5 large-6 columns"></div>
@@ -159,11 +153,12 @@
         </div>
         <div class="small-12 medium-7 large-6 columns">
             <h3 class="light">
-                Thinking in a smart planet.
+                Evolving to a smart planet
             </h3>
             <p>
-                UIoT thinks constantly in how a smarter planet can coexists with our planet. Join our academics team,
-                helping us in papers and scientific things.
+                <b>UIoT</b> architecture contains a set of papers, where many people help us to improve, and evolve, to
+                a new level.
+                To a real IoT scenario, be involved, contribute to UIoT being academic.
             </p>
             <a href="/get.html#academics" class="small button radius a-button">
                 UIoT academics
@@ -189,7 +184,8 @@
     </div>
     <div class="row blog-feature">
         <div class="large-12 columns large-centered">
-            <iframe src="blog/remote.php" scrolling="no" width="100%" height="200px" id="blog_frame" marginheight="0"
+            <iframe src="blog/remote.php" scrolling="no" width="100%" height="200px" id="blog_frame"
+                    onload="blogResize()" marginheight="0"
                     frameborder="0" style="border:none"></iframe>
         </div>
     </div>
@@ -269,21 +265,19 @@
         </div>
     </div>
 </section>
-
 <script src="/js/vendor/jquery.js"></script>
 <script src="/js/foundation.min.js"></script>
-
 <script>
     jQuery(document).foundation();
 </script>
-
+<script src="/js/uiot/blog.js"></script>
 <script src="/js/uiot/uiot.js"></script>
-
 <script>
     UIoT();
 </script>
-
 <script src="/js/uiot/analytics.js"></script>
-
+<script>
+    Analytics();
+</script>
 </body>
 </html>
