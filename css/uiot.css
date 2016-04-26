@@ -517,6 +517,10 @@ strongs {
     background: #6799C6
 }
 
+.background-pink {
+    background: #cc7691
+}
+
 .network-blue {
     background: #6799C6 url(/img/network.png) no-repeat;
     background-size: cover
@@ -548,6 +552,117 @@ p.scroll-message {
     margin-top: -50px;
     line-height: 1.6;
     margin-bottom: 120px;
+}
+
+.about-section {
+    background-size: cover !important;
+    position: relative;
+    padding: 2.5rem 0 4.5rem;
+    text-align: center;
+    overflow: visible;
+}
+
+.about-section .without-nav {
+    padding-bottom: 2.5rem;
+}
+
+.about-section p {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.about-section .link {
+    text-align: center;
+    color: #fefefe;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.float-left {
+    float: left !important;
+}
+
+.how-to-use-templates {
+    position: relative;
+    padding: 30px 0;
+}
+
+.light {
+    font-weight: 200 !important;
+}
+
+#emails .button {
+    background: #cc7691;
+}
+
+.inky-small {
+    height: 377px;
+    width: 323px;
+    position: absolute;
+    top: 0;
+    right: -310px;
+    z-index: 2;
+}
+
+.top-headlines {
+    margin-top: 50px;
+}
+
+.about-section h1, .about-section h3, .about-section h4 {
+    color: #fff;
+}
+
+.about-section li a.is-active {
+    background: rgba(250, 250, 250, 0.15);
+}
+
+.about-section li a:hover {
+    background: rgba(250, 250, 250, 0.15);
+}
+
+.about-section a {
+    color: #fff;
+}
+
+.about-section h1 {
+    font-size: 3em;
+    line-height: 1.0;
+    font-weight: 500;
+}
+
+.about-section .without-header-h1 {
+    font-size: 2.875rem;
+    text-align: center;
+    color: #fefefe;
+    margin: 0;
+}
+
+.about-section li a {
+    padding: 0.9rem 1rem 0.75rem;
+    font-size: 0.8125rem;
+    color: #fff;
+    font-family: 'Proxima Nova Condensed Bold', 'Proxima Nova Condensed', 'proxima-nova-condensed', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.about-section li {
+    float: none;
+    display: inline-block;
+}
+
+.about-section ul {
+    float: none;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 0;
+    width: 100%;
 }
 
 ::-webkit-scrollbar {

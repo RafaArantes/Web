@@ -13,8 +13,8 @@ var Sigma = function () {
             type: 'canvas'
         },
         settings: {
-            defaultNodeColor: '#19C0FF',
-            defaultEdgeColor: '#2976BB',
+            defaultNodeColor: '#cc7691',
+            defaultEdgeColor: '#cc7691',
             mouseWheelEnabled: false,
             doubleClickEnable: false,
             mouseInertiaRatio: 3,
@@ -22,7 +22,7 @@ var Sigma = function () {
             maxNodeSize: 30,
             defaultLabelColor: '#666',
             font: 'Open Sans',
-            edgeColor: 'source',
+            edgeColor: 'default',
             drawEdges: true,
             doubleClickZoomingRatio: 1,
             animationsTime: 400000,

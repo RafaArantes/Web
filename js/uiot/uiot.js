@@ -10,7 +10,7 @@ var UIoT = function () {
     };
 
     var BackgroundSettings = {
-        background_div: jQuery('.video-area'),
+        background_div: jQuery('.background-area'),
         background_images: ['1.jpg', '2.jpg', '3.jpg']
     };
 
@@ -20,15 +20,6 @@ var UIoT = function () {
 
         video_height: (Settings.window_height - Settings.top_bar_height),
         video_text_margin: (Settings.window_height / 2) - (Settings.header_height / 2)
-    };
-
-    var ResizeAdjustment = function () {
-
-        // Set Video Wrapper Size
-        jQuery('#videoBackground, #videoBackgroundLoop').css({
-            height: 'auto',
-            width: '100%'
-        });
     };
 
     var SizeAdjustment = function () {
@@ -42,18 +33,11 @@ var UIoT = function () {
         jQuery('.header-text').css('margin-top', Definitions.video_text_margin).addClass('active');
 
         // Get Blog Element
-        var blogElement = document.getElementById('blog_frame');
-
-        // If Blog Element Exists Update their Data
-        if (blogElement) {
-            blogElement.height = blogElement.contentWindow.document.body.scrollHeight + "px";
-            blogElement.width = blogElement.contentWindow.document.body.scrollWidth + "px";
+        try {
+            blogResize();
+        } catch (err) {
+            // ignored
         }
-
-        // Scroll
-        jQuery(window).on("scroll", function () {
-            jQuery(".scroll-message").is(":visible") && jQuery(".scroll-message").fadeOut(300);
-        });
     };
 
     var Scroll = function () {
@@ -85,7 +69,7 @@ var UIoT = function () {
     var Triggers = function () {
 
         jQuery(window).on('resize', function () {
-            ResizeAdjustment();
+            SizeAdjustment();
         }).trigger('resize');
     };
 
