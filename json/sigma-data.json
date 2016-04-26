@@ -5,7 +5,7 @@
       "label": "UIoT",
       "x": 1490,
       "y": 1421,
-      "color": "#666",
+      "color": "#cc7691",
       "size": 8
     },
     {
@@ -65,7 +65,6 @@
       "size": 3
     }
   ],
-
   "edges": [
     {
       "id": "e-security",
