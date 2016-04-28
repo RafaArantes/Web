@@ -34,7 +34,7 @@ var Sigma = function () {
         $('#reveal-' + e.data.node.id).foundation('reveal', 'open');
     });
 
-    sigma.parsers.json('http://uiot_site/json/sigma-data.json', uiotSigma, function () {
+    sigma.parsers.json('../json/sigma-data.json', uiotSigma, function () {
 
         // Refresh the display:
         uiotSigma.refresh();

@@ -62,7 +62,7 @@ var UIoT = function () {
 
         // If Background Element Exists. Update Image
         if (BackgroundSettings.background_div) {
-            BackgroundSettings.background_div.css('background', '#161616 url(http://uiot_site/img/welcome/' + BackgroundSettings.background_images[Math.floor(Math.random() * BackgroundSettings.background_images.length)] + ') no-repeat fixed center top');
+            BackgroundSettings.background_div.css('background', '#161616 url(../img/welcome/' + BackgroundSettings.background_images[Math.floor(Math.random() * BackgroundSettings.background_images.length)] + ') no-repeat fixed center top');
         }
     };
 

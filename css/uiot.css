@@ -373,6 +373,13 @@ h3.light {
     background-position: 0 0
 }
 
+.notable-cyan {
+    background: #008099 !important;
+    background-position-y: -40px;
+    background-size: auto;
+    background-position: 0 0
+}
+
 .button.darker {
     background: #e7e7f2
 }
@@ -496,6 +503,10 @@ blockquote {
     font-weight: 200;
 }
 
+.text-justify {
+    text-align: justify !important;
+}
+
 #user-modal .highest {
     margin-top: -10px
 }
@@ -522,7 +533,7 @@ strongs {
 }
 
 .network-blue {
-    background: #6799C6 url(/img/network.png) no-repeat;
+    background: #6799C6 url(../img/network.png) no-repeat;
     background-size: cover
 }
 
@@ -671,42 +682,42 @@ p.scroll-message {
 
 @font-face {
     font-family: 'proxima-nova';
-    src: url(/fonts/ProximaNova-Reg-webfont.woff) format("woff");
+    src: url(../fonts/ProximaNova-Reg-webfont.woff) format("woff");
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'proxima-nova';
-    src: url(/fonts/ProximaNova-Light-webfont.woff) format("woff");
+    src: url(../fonts/ProximaNova-Light-webfont.woff) format("woff");
     font-weight: 200;
     font-style: normal
 }
 
 @font-face {
     font-family: 'proxima-nova';
-    src: url(/fonts/ProximaNova-Bold-webfont.woff) format("woff");
+    src: url(../fonts/ProximaNova-Bold-webfont.woff) format("woff");
     font-weight: bold;
     font-style: normal
 }
 
 @font-face {
     font-family: 'proxima-nova-condensed';
-    src: url(/fonts/proximanovacond-light-webfont.woff) format("woff");
+    src: url(../fonts/proximanovacond-light-webfont.woff) format("woff");
     font-weight: 200;
     font-style: normal
 }
 
 @font-face {
     font-family: 'proxima-nova-condensed';
-    src: url(/fonts/proximanovacond-regular-webfont.woff) format("woff");
+    src: url(../fonts/proximanovacond-regular-webfont.woff) format("woff");
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'proxima-nova-condensed';
-    src: url(/fonts/proximanovacond-bold-webfont.woff) format("woff");
+    src: url(../fonts/proximanovacond-bold-webfont.woff) format("woff");
     font-weight: bold;
     font-style: normal
 }
