@@ -21,12 +21,14 @@ var Sigma = function () {
             maxEdgeSize: 15,
             maxNodeSize: 30,
             defaultLabelColor: '#666',
-            font: 'Open Sans',
+            font: 'proxima-nova',
             edgeColor: 'default',
             drawEdges: true,
             doubleClickZoomingRatio: 1,
-            animationsTime: 400000,
-            sideMargin: 1
+            animationsTime: 0,
+            sideMargin: 1,
+            enableCamera: false,
+            scalingMode: 'inside'
         }
     });
 
@@ -34,12 +36,12 @@ var Sigma = function () {
         $('#reveal-' + e.data.node.id).foundation('reveal', 'open');
     });
 
-    sigma.parsers.json('../json/sigma-data.json', uiotSigma, function () {
+    sigma.parsers.json('https://uiotassets.blob.core.windows.net/assets/json/sigma-data.json', uiotSigma, function () {
 
         // Refresh the display:
         uiotSigma.refresh();
 
         // Initialize the dragNodes plugin:
-        var dragListener = sigma.plugins.dragNodes(uiotSigma, uiotSigma.renderers[0]);
+        sigma.plugins.dragNodes(uiotSigma, uiotSigma.renderers[0]);
     });
 };

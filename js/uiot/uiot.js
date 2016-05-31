@@ -11,7 +11,7 @@ var UIoT = function () {
 
     var BackgroundSettings = {
         background_div: jQuery('.background-area'),
-        background_images: ['1.jpg', '2.jpg', '3.jpg']
+        background_images: ['2.jpg'] //['1.jpg', '2.jpg', '3.jpg']
     };
 
     var Definitions = {
@@ -62,7 +62,7 @@ var UIoT = function () {
 
         // If Background Element Exists. Update Image
         if (BackgroundSettings.background_div) {
-            BackgroundSettings.background_div.css('background', '#161616 url(../img/welcome/' + BackgroundSettings.background_images[Math.floor(Math.random() * BackgroundSettings.background_images.length)] + ') no-repeat fixed center top');
+            BackgroundSettings.background_div.css('background', '#161616 url(https://uiotassets.blob.core.windows.net/assets/img/welcome/' + BackgroundSettings.background_images[Math.floor(Math.random() * BackgroundSettings.background_images.length)] + ') no-repeat fixed center top');
         }
     };
 

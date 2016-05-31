@@ -5,24 +5,7 @@
     top: 0;
     left: 0;
     z-index: 50;
-    -moz-transition: all 1.5s;
-    -webkit-transition: all 1.5s;
-    -o-transition: all 1.5s;
     opacity: 1
-}
-
-.header-text.active {
-    -moz-transition: opacity 1.2s;
-    -webkit-transition: opacity 1.2s;
-    -o-transition: opacity 1.2s;
-    opacity: 1
-}
-
-.header-text {
-    opacity: 0;
-    -moz-transition: all 1.5s;
-    -webkit-transition: all 1.5s;
-    -o-transition: all 1.5s
 }
 
 .header-text h1 {
@@ -30,7 +13,7 @@
     margin-top: 0
 }
 
-.main-header.uiot h1 {
+.uiot h1 {
     font-size: 3em;
     padding-top: 0 !important;
     margin-bottom: 30px;
@@ -38,7 +21,7 @@
     font-weight: lighter
 }
 
-.main-header.uiot p.highest {
+.uiot p.highest {
     font-size: 1.4em;
     line-height: 1.6;
     margin-bottom: 120px;
@@ -69,10 +52,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0 !important
 }
 
-p.highest.white-text, p.highest.white {
-    color: #FFF
-}
-
 .main-header.uiot .button {
     margin-top: 30px;
     padding: 1em 1.5em;
@@ -94,38 +73,33 @@ p.highest.white-text, p.highest.white {
     margin-top: -10px;
     width: 102%;
     background-size: cover !important;
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 40s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.20, 1.20, 1.20);
+        transform: scale3d(1.20, 1.20, 1.20);
+    }
+
+    to {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
 }
 
 .video-area video {
     position: absolute;
     width: 100%;
     height: 100%
-}
-
-.hide-extras [role="main"] {
-    width: 100%;
-    overflow: hidden
-}
-
-[role="main"] {
-    display: block;
-    position: relative;
-    z-index: 1;
-    -webkit-transition: .08s all;
-    -moz-transition: .08s all;
-    -o-transition: .8s all;
-    transition: .08s all
-}
-
-[role="main"]:before {
-    content: " ";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: #fff
 }
 
 .uiot-bar {
@@ -311,18 +285,6 @@ ul.partner-symbols li {
     margin-bottom: 40px
 }
 
-.left-choose {
-    display: block;
-    float: right;
-    padding-top: 5px;
-    border-left: 1px solid #efefef;
-    padding-left: 40px
-}
-
-.regular {
-    font-weight: 400 !important
-}
-
 ul.uiot-members {
     padding-bottom: 24px
 }
@@ -362,15 +324,12 @@ h3.light {
     background: url(../img/u-for-uiot.png)
 }
 
-.talent .benefits {
-    margin-bottom: 30px
-}
-
 .notable {
-    background: #2976bb !important;
+    background: #1E5688 !important;
     background-position-y: -40px;
     background-size: auto;
-    background-position: 0 0
+    background-position: 0 0;
+    padding: 50px 0 50px 6px
 }
 
 .notable-cyan {
@@ -380,22 +339,9 @@ h3.light {
     background-position: 0 0
 }
 
-.button.darker {
-    background: #e7e7f2
-}
-
 .benefits {
     padding: 50px;
     width: 100%
-}
-
-.reveal-modal .close-reveal-modal {
-    color: #000;
-    cursor: pointer;
-    position: absolute;
-    top: .625rem;
-    right: 1.375rem;
-    font: lighter 2rem/1 'Proxima Nova', 'proxima-nova', 'Helvetica Neue', 'Roboto', sans-serif
 }
 
 p {
@@ -403,6 +349,10 @@ p {
 }
 
 .uiot-footer {
+    padding: 40px 20px 40px 20px
+}
+
+.uiot-footer ul {
     margin: 0;
     display: inline-block
 }
@@ -416,14 +366,21 @@ p {
 }
 
 .uiot-footer li a {
-    color: #666;
-    padding: 3px 3px
+    color: white;
+    padding: 20px;
+    font-size: 26px
 }
 
 .copyright {
     margin: 6px 0 0 6px;
-    font-size: 0.75em;
-    color: #666
+    font-size: 16px;
+    color: white
+}
+
+.copyright-text {
+    font-size: 14px;
+    color: white;
+    margin: 6px 0 0 6px;
 }
 
 .user-modal {
@@ -440,31 +397,9 @@ p {
     color: #fff
 }
 
-.a-button:hover {
-    background: #1E5688;
-    color: #fff
-}
-
-.button {
-    opacity: 0.95
-}
-
-.button:hover {
-    opacity: 1
-}
-
 .y-button {
     background: white !important;
     color: black !important
-}
-
-.user-modal img {
-    float: left;
-    border-radius: 3px;
-    width: 60px;
-    margin-right: 2%;
-    margin-top: 2% !important;
-    height: 60px
 }
 
 .user-modal h2 {
@@ -511,11 +446,6 @@ blockquote {
     margin-top: -10px
 }
 
-strongs {
-    font-weight: bold !important;
-    line-height: inherit
-}
-
 .main-header {
     overflow: hidden
 }
@@ -526,6 +456,10 @@ strongs {
 
 .background-blue {
     background: #6799C6
+}
+
+.background-big-blue {
+    background: #2976bb
 }
 
 .background-pink {
@@ -541,9 +475,12 @@ strongs {
     background: #F0F0E8
 }
 
-#testimonials {
-    color: #ec5148;
-    background: #f9f7ed
+.background-light-gray {
+    background: #f6f6f6
+}
+
+.background-weird {
+    background: #008099
 }
 
 #uiot-graph {
@@ -592,30 +529,8 @@ p.scroll-message {
     font-size: 0.8em;
 }
 
-.float-left {
-    float: left !important;
-}
-
-.how-to-use-templates {
-    position: relative;
-    padding: 30px 0;
-}
-
 .light {
     font-weight: 200 !important;
-}
-
-#emails .button {
-    background: #cc7691;
-}
-
-.inky-small {
-    height: 377px;
-    width: 323px;
-    position: absolute;
-    top: 0;
-    right: -310px;
-    z-index: 2;
 }
 
 .top-headlines {
@@ -676,8 +591,19 @@ p.scroll-message {
     width: 100%;
 }
 
-::-webkit-scrollbar {
-    display: none;
+.big-row {
+    max-width: 82.5rem !important;
+}
+
+.partners-ul {
+    text-align: center;
+    margin-bottom: 0
+}
+
+.partners-ul li {
+    display: inline-block;
+    margin: 15px;
+    list-style: none
 }
 
 @font-face {
