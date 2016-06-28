@@ -25,11 +25,11 @@
     font-size: 1.4em;
     line-height: 1.6;
     margin-bottom: 120px;
-    font-weight: normal;
+    font-weight: normal
 }
 
 blockquote, body, .tags, ul.right, ul.right li a, p.highest, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Proxima Nova', 'proxima-nova', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: 'proxima-nova', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased
 }
 
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-header.uiot .button {
     margin-top: 30px;
-    padding: 1em 1.5em;
+    padding: 1em 1.5em
 }
 
 .text-center {
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-animation-name: pulse;
     -webkit-animation-duration: 40s;
     -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite
 }
 
 @-webkit-keyframes pulse {
@@ -165,7 +165,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 16px;
     border-left: 1px solid rgba(0, 0, 0, 0);
     background: none;
-    font-weight: bold
+    font-weight: 600
+}
+
+.uiot-bar ul.right li a:hover {
+    background: rgba(250, 250, 250, 0.15) !important
 }
 
 .uiot-bar ul.right li a {
@@ -556,7 +560,7 @@ p.scroll-message {
 .about-section h1 {
     font-size: 3em;
     line-height: 1.0;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .about-section .without-header-h1 {
@@ -568,13 +572,13 @@ p.scroll-message {
 
 .about-section li a {
     padding: 0.9rem 1rem 0.75rem;
-    font-size: 0.8125rem;
+    font-size: 15px;
     color: #fff;
-    font-family: 'Proxima Nova Condensed Bold', 'Proxima Nova Condensed', 'proxima-nova-condensed', 'Helvetica Neue', sans-serif;
+    font-family: 'proxima-nova-condensed', 'Helvetica Neue', sans-serif;
     text-transform: uppercase;
     display: block;
-    font-weight: bold;
     letter-spacing: 1px;
+    font-weight: 600;
 }
 
 .about-section li {
