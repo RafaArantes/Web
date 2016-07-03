@@ -8,6 +8,10 @@
     opacity: 1
 }
 
+.partners-ul img {
+    max-height: 40px;
+}
+
 .header-text h1 {
     padding-top: 0 !important;
     margin-top: 0
