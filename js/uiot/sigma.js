@@ -21,7 +21,7 @@ var Sigma = function () {
             maxEdgeSize: 15,
             maxNodeSize: 30,
             defaultLabelColor: '#666',
-            font: 'proxima-nova',
+            font: 'Roboto',
             edgeColor: 'default',
             drawEdges: true,
             doubleClickZoomingRatio: 1,
