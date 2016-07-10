@@ -10,7 +10,6 @@
     <?= file_get_contents('web_include_asap_uiot/about/contact.html') ?>
     <?= file_get_contents('web_include_asap_uiot/about/subscribe.html') ?>
     <?= file_get_contents('web_include_asap_uiot/footer.html') ?>
-
     <?= file_get_contents('web_include_asap_uiot/about/modals/users.html') ?>
     <?= file_get_contents('web_include_asap_uiot/about/modals/project.html') ?>
 <script src="https://uiot.azurewebsites.net/js/vendor/jquery.js"></script>
