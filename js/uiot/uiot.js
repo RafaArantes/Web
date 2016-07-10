@@ -11,7 +11,7 @@ var UIoT = function () {
 
     var BackgroundSettings = {
         background_div: jQuery('.background-area'),
-        background_images: ['4.png'] //['1.jpg', '2.jpg', '3.jpg']
+        background_images: ['6.jpg'] //['1.jpg', '2.jpg', '3.jpg']
     };
 
     var Definitions = {

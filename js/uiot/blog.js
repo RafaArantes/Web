@@ -5,7 +5,6 @@ function blogResize() {
     // If Blog Element Exists Update their Data
     if (blogElement) {
         blogElement.height = blogElement.contentWindow.document.body.scrollHeight + "px";
-        blogElement.width = blogElement.contentWindow.document.body.offsetWidth + "px";
     }
 
     // Scroll
