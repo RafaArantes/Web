@@ -1,6 +1,6 @@
 <h1>![](http://i.imgur.com/TaFqVtT.png)<sup><sup>website <i>(assets)</i></sup></sup><sub><sub><sup></h1></sup></sub></sub>
 <br>
-[![ZenHub](https://img.shields.io/badge/supercharged-zenhub.io-orange.svg)](https://zenhub.io)
+<a href="https://zenhub.com"><img src="https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png"></a>
 
 <b>What this repository should be?</b><br>
 This repository contains our website content (assets and pages). Here all content about web site will be published.
