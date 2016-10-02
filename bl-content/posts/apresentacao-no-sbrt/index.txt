@@ -1,0 +1,6 @@
+Title: Apresentação no SBrT
+Content: <p>No começo de 2016, devido a um artigo cientifico publicado por integrantes do projeto, o UIoT foi convidado para o SBrT 2016 que é o maior simpósio sobre telecomunicações do brasil.</p>
+
+<p>O artigo científico apresenta o auto registro de dispositivos em ambientes iot. Explicando sucintamente, a proposta define&nbsp;que um dispositivo&nbsp;se cadastre automaticamente&nbsp;em uma rede de&nbsp;outros dispositivos iot e ainda seja capaz de comunicar a rede qual serviço o dispositivo pode realizar.</p>
+
+<p>Hoje, com grande alegria, apresentamos o UIoT para um grande público no SBrT, com a presença da mídia e até mesmo de grandes nomes da pesquisa e telecomunicação, com uma apresentação que durou 1 hora.</p>

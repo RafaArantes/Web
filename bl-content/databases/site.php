@@ -1,0 +1,26 @@
+<?php defined('BLUDIT') or die('Bludit CMS.'); ?>
+{
+    "title": "UIoT Blog",
+    "slogan": "where our news are spoiled.",
+    "description": "",
+    "footer": "Copyright \u00a9 2016 Universal Internet of Things",
+    "language": "en_US",
+    "locale": "en_US",
+    "timezone": "America\/Sao_Paulo",
+    "theme": "log",
+    "adminTheme": "default",
+    "homepage": "",
+    "postsperpage": "6",
+    "uriPost": "\/post\/",
+    "uriPage": "\/",
+    "uriTag": "\/tag\/",
+    "url": "https:\/\/uiot.org\/blog\/",
+    "emailFrom": "news@uiot.org",
+    "currentBuild": "20161001",
+    "twitter": "",
+    "facebook": "https:\/\/facebook.com\/universalinternetofthings",
+    "googlePlus": "",
+    "instagram": "",
+    "github": "https:\/\/github.com\/uiot\/",
+    "uriBlog": "\/blog\/"
+}

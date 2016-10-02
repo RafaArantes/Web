@@ -1,0 +1,10 @@
+Title: A cup of things!
+Content: <p>Starting my day, after a little cup of coffee, a good question is placed here. With all these IoT approaches that appeared suddently.. How this community will go ahead? I mean, as an UIoT member, wisely i prefer our architecture. But thinking smart.. or bigger, how will all these concepts being applicated to the world? *roffll* We simply can't in an IoT world co-exists with simultaneous architectures. Will a specific one be the leader? Personally, no. Since the biggest companies that are investing in IoT researches want something for their company products. Some ways to increase their marketing. Maybe the biggest revolution starts in a little lab, in some university. Will be us?</p>
+
+<p>Maybe. Stay in touch with us.</p>
+
+<p style="text-align:center"><img alt="undefined" class="nb-align-center" src="https://i.imgur.com/TCLW9g1.gif" /></p>
+
+<p style="text-align:center"><em>this image is copyright of IBM's smart planet.</em></p>
+
+<p>&nbsp;</p>

@@ -1,0 +1,6 @@
+Title: Let's do Smarter!
+Content: <p style="text-align:center"><strong>Check out our new Banner!</strong></p>
+
+<p style="text-align:center"><img alt="undefined" src="https://i.imgur.com/f3f5Per.jpg" /></p>
+
+<p>&nbsp;</p>

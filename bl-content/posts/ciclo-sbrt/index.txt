@@ -1,0 +1,4 @@
+Title: Ciclo SBrT
+Content: <p>No sábado, dia 6 de agosto, foi aberto mais um novo ciclo do UIoT, ciclo (caso não saiba o que é um ciclo clique <a href="https://blog.uiot.org/post/entenda-o-que-e-um-ciclo" target="_self">aqui</a>) este chamado de SBrT. A origem deste curioso nome vem do convite para o Simpósio Brasileiro de Telecomunicações e Processamento de Sinais que ocorrerá de 30 de agosto a 2 de setembro em Santarém.</p>
+
+<p>No novo ciclo o UIoT priorizou objetivos com foco no Simpósio. Uma novidade do novo ciclo foi a criação de uma nova camada no projeto, a nova camada foi batizada de “camada de criação &amp; inovação” que ficará encarregada de suporte as mídias físicas e sociais do UIoT, como site, propagandas, redes sociais.</p>

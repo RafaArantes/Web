@@ -1,0 +1,14 @@
+Title: Entenda o que é um ciclo
+Content: <p>O UIoT é formado por 9 camadas, porém para essas camadas se organizarem o projeto usa um sistema de ciclos, porém o que é um ciclo? Para que serve?</p>
+
+<p>Um ciclo é um período de tempo em que cada camada do projeto foca em objetivos chaves, traçados anteriormente, assim organizando e agilizando os serviços do projeto.</p>
+
+<p>No início do ciclo todas as camadas se reúnem e botam em pauta as metas que devem ser concluídas até o final do ciclo. Os ciclos do UIoT usam a metodologia de SCRUM (uma metodologia ágil de planejamento de projetos) para deixar o serviço mais dinâmico, organizado e rotativo. No SCRUM o projeto é divido em ciclos, cada ciclo dura 6 semanas, porém para deixar o ciclo mais organizado cada semana tem um objetivo especifico no ciclo.</p>
+
+<p>Na primeira semana do ciclo o scrum master de cada camada atribui as tarefas que cada integrante vai executar até o final das 6 semanas.</p>
+
+<p>A próxima etapa dura da segunda semana até a quinta. Nessa etapa cada integrante da camada irá trabalhar da forma que foi decido, pelo seu respectivo scrum master, na primeira semana, ou seja é a etapa do "trabalho duro".</p>
+
+<p>Na sexta semana todos os objetivos já devem estar prontos, para assim haver apenas pequenos reparos, correção de bugs e pequenas implementações, em outras palavras, esta etapa é somente para a checagem.</p>
+
+<p>No ultimo dia todas as camadas se reúnem e apresentam tudo que foi feito durante as 6 semanas do ciclo para o P.O que irá decidir quais serão as melhorias para o próximo ciclo.</p>
