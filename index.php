@@ -3,28 +3,16 @@
     <?= file_get_contents('web_include_asap_uiot/header.html') ?>
 <body>
 <?php
-    if ($_GET['lang'] == 'br'){
-        file_get_contents('web_include_asap_uiot/index/br/main.html');
-        file_get_contents('web_include_asap_uiot/index/br/ideas.html');
-        file_get_contents('web_include_asap_uiot/index/br/think.html');
-        file_get_contents('web_include_asap_uiot/index/br/academics.html');
-        file_get_contents('web_include_asap_uiot/index/br/blog.html');
-        file_get_contents('web_include_asap_uiot/index/br/partners.html');
-        file_get_contents('web_include_asap_uiot/footer.html');
-    }
-
-    else {
-        file_get_contents('web_include_asap_uiot/index/en/main.html');
-        file_get_contents('web_include_asap_uiot/index/en/ideas.html');
-        file_get_contents('web_include_asap_uiot/index/en/think.html');
-        file_get_contents('web_include_asap_uiot/index/en/academics.html');
-        file_get_contents('web_include_asap_uiot/index/en/blog.html');
-        file_get_contents('web_include_asap_uiot/index/en/partners.html');
-        file_get_contents('web_include_asap_uiot/footer.html');
-    }
+    $lan = ($_GET['lang'] == 'br' ? 'br' : 'en');
     
+    file_get_contents("web_include_asap_uiot/index/$lan/main.html");
+    file_get_contents("web_include_asap_uiot/index/$lan/ideas.html");
+    file_get_contents("web_include_asap_uiot/index/$lan/think.html");
+    file_get_contents("web_include_asap_uiot/index/$lan/academics.html");
+    file_get_contents("web_include_asap_uiot/index/$lan/blog.html");
+    file_get_contents("web_include_asap_uiot/index/$lan/partners.html");
+    file_get_contents("web_include_asap_uiot/footer.html");
 ?>
-
 <script src="https://uiotassets.blob.core.windows.net/assets/js/vendor/jquery.js"></script>
 <script src="https://uiotassets.blob.core.windows.net/assets/js/foundation.min.js"></script>
 <script>
