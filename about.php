@@ -2,32 +2,19 @@
 <html>
     <?= file_get_contents('web_include_asap_uiot/header.html') ?>
 <body>
-
 <?php
-    if ($_GET['lang'] == 'br') {
-        file_get_contents('web_include_asap_uiot/about/br/main.html');
-        file_get_contents('web_include_asap_uiot/about/br/tags.html');
-        file_get_contents('web_include_asap_uiot/about/br/manifesto.html');
-        file_get_contents('web_include_asap_uiot/about/br/architecture.html');
-        file_get_contents('web_include_asap_uiot/about/br/team.html');
-        file_get_contents('web_include_asap_uiot/about/br/contact.html');
-        file_get_contents('web_include_asap_uiot/about/br/subscribe.html');
-        file_get_contents('web_include_asap_uiot/footer.html');
-        file_get_contents('web_include_asap_uiot/about/modals/users.html');
-        file_get_contents('web_include_asap_uiot/about/modals/project.html');
-    }
-    else {
-        file_get_contents('web_include_asap_uiot/about/en/main.html');
-        file_get_contents('web_include_asap_uiot/about/en/tags.html');
-        file_get_contents('web_include_asap_uiot/about/en/manifesto.html');
-        file_get_contents('web_include_asap_uiot/about/en/architecture.html');
-        file_get_contents('web_include_asap_uiot/about/en/team.html');
-        file_get_contents('web_include_asap_uiot/about/en/contact.html');
-        file_get_contents('web_include_asap_uiot/about/en/subscribe.html');
-        file_get_contents('web_include_asap_uiot/footer.html');
-        file_get_contents('web_include_asap_uiot/about/modals/users.html');
-        file_get_contents('web_include_asap_uiot/about/modals/project.html');
-    }
+    $lan = ($_GET['lang'] == 'br' ? 'br' : 'en');
+    
+    file_get_contents("web_include_asap_uiot/about/$lan/main.html");
+    file_get_contents("web_include_asap_uiot/about/$lan/tags.html");
+    file_get_contents("web_include_asap_uiot/about/$lan/manifesto.html");
+    file_get_contents("web_include_asap_uiot/about/$lan/architecture.html");
+    file_get_contents("web_include_asap_uiot/about/$lan/team.html");
+    file_get_contents("web_include_asap_uiot/about/$lan/contact.html");
+    file_get_contents("web_include_asap_uiot/about/$lan/subscribe.html");
+    file_get_contents("web_include_asap_uiot/footer.html");
+    file_get_contents("web_include_asap_uiot/about/modals/users.html");
+    file_get_contents("web_include_asap_uiot/about/modals/project.html");
 ?>
 <script src="https://uiotassets.blob.core.windows.net/assets/js/vendor/jquery.js"></script>
 <script src="https://uiotassets.blob.core.windows.net/assets/js/foundation.min.js"></script>
