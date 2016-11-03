@@ -5,15 +5,15 @@
 <?php
     $lan = ($_GET['lang'] == 'br' ? 'br' : 'en');
     
-    file_get_contents("web_include_asap_uiot/get/$lan/main.html");
-    file_get_contents("web_include_asap_uiot/get/$lan/involved.html");
-    file_get_contents("web_include_asap_uiot/get/$lan/started.html");
-    file_get_contents("web_include_asap_uiot/get/$lan/academics.html");
-    file_get_contents("web_include_asap_uiot/get/$lan/applications.html");
-    file_get_contents("web_include_asap_uiot/get/$lan/devices.html");
-    file_get_contents("web_include_asap_uiot/get/$lan/docs.html");
-    file_get_contents("web_include_asap_uiot/get/$lan/get.html");
-    file_get_contents("web_include_asap_uiot/footer.html");
+    echo file_get_contents("web_include_asap_uiot/get/$lan/main.html");
+    echo file_get_contents("web_include_asap_uiot/get/$lan/involved.html");
+    echo file_get_contents("web_include_asap_uiot/get/$lan/started.html");
+    echo file_get_contents("web_include_asap_uiot/get/$lan/academics.html");
+    echo file_get_contents("web_include_asap_uiot/get/$lan/applications.html");
+    echo file_get_contents("web_include_asap_uiot/get/$lan/devices.html");
+    echo file_get_contents("web_include_asap_uiot/get/$lan/docs.html");
+    echo file_get_contents("web_include_asap_uiot/get/$lan/get.html");
+    echo file_get_contents("web_include_asap_uiot/footer.html");
 ?>
 <script src="https://uiotassets.blob.core.windows.net/assets/js/vendor/jquery.js"></script>
 <script src="https://uiotassets.blob.core.windows.net/assets/js/foundation.min.js"></script>
