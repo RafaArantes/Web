@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1c762122-1ccb-43a6-a3f8-ce1f56178402" name="website" url="http://waws-prod-bn1-007.ftp.azurewebsites.windows.net">
+        <fileTransfer host="waws-prod-bn1-007.ftp.azurewebsites.windows.net" port="21" rootFolder="/site/wwwroot" password="dfe6dfdcdfebdfd0dfffdfdddfeedfffdfcfdf93df9cdf9ddfd8dfeddf99dffddf9c" username="uiotweb\uiotftp">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

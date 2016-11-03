@@ -559,3 +559,8 @@ p.scroll-message {
     font-weight: 700;
     font-style: normal
 }
+
+.translate-flag {
+    height: 20px;
+    width: 38px;
+}
